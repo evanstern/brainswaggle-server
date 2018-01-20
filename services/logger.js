@@ -3,7 +3,7 @@ import * as Winston from 'winston';
 const logger = new Winston.Logger({
   level: 'info',
   transports: [
-    new Winston.Transports.Console({
+    new (Winston.transports.Console)({
       colorize: true,
     }),
   ],
