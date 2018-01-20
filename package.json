@@ -10,7 +10,8 @@
   "scripts": {
     "start": "nodemon ./index.js --exec babel-node",
     "build": "babel . -d dist --ignore node_modules",
-    "serve": "node ./dist/index.js"
+    "serve": "node ./dist/index.js",
+    "eslint": "eslint ."
   },
   "dependencies": {
     "express": "^4.16.2",
