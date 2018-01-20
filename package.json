@@ -6,5 +6,9 @@
   "repository": "git@github.com:evanstern/brainswaggle-server.git",
   "author": "Evan Stern <evanmicahstern@gmail.com>",
   "license": "UNLICENSED",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  }
 }
