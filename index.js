@@ -1,4 +1,5 @@
 import express from 'express';
+import { port } from './config';
 import logger from './services/logger';
 
 logger.stream = {
@@ -13,6 +14,6 @@ app.get('/', (req, res) => {
   res.send('Invalid Endpoint');
 });
 
-app.listen(3030, () => {
-  logger.info('Server Started');
+app.listen(port, () => {
+  logger.info(`Server started on port ${port}`);
 });
